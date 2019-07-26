@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Signin">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/emailInput"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/regular"
+        android:layout_centerHorizontal="true"
+        android:hint="이메일"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/regular"
+        android:background="@drawable/button_round"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="@android:color/white"
+        android:layout_alignStart="@+id/emailInput"
+        android:layout_marginTop="154dp"
+        android:text="확인" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/regular"
+        android:layout_above="@+id/passwordtwiceInput"
+        android:layout_centerHorizontal="true"
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/passwordtwiceInput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/regular"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="172dp"
+        android:hint="비밀번호를 한번 더 입력해주세요"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signinButton"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/regular"
+        android:background="@drawable/button_round"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_alignStart="@+id/emailInput"
+        android:layout_marginBottom="108dp"
+        android:text="회원가입" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/regular"
+        android:layout_alignEnd="@+id/emailInput"
+        android:background="@drawable/button_round"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="109dp"
+        android:text="회원가입 취소" />
+
+
+
+</RelativeLayout>

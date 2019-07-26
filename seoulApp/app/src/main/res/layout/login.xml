@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_marginHorizontal="48dp"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:layout_marginBottom="5dp"
+            android:hint="이메일 주소"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailInput"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/regular"
+            android:hint="비밀번호"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/emailInput"
+            android:layout_below="@+id/two_check"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_round"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/regular"
+                android:text="회원가입"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_round"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/signupButton"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/regular"
+                android:text="로그인"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/two_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/emailInput"
+            android:layout_below="@+id/passwordInput"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/idBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_alignStart="@+id/emailInput"
+                android:layout_below="@+id/passwordInput"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/regular"
+                android:text="아이디 저장" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordInput"
+                android:text="로그인 유지" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
